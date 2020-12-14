@@ -196,6 +196,9 @@ h3{
 	font-size: 45px;
 	color: red;
 }
+.footer-logo img{
+	border-radius: 50%;
+}
 @media (min-width: 600px){
 	.title{
 		font-size: 30px;
