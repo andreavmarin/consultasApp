@@ -91,7 +91,7 @@
 					<div class="intro-search-field with-autocomplete">
 						<label for="dni-input" class="field-title ripple-effect">Buscar por DNI ?</label>
 						<div class="input-with-icon">
-							<input id="dni-input" type="text" placeholder="DNI, sin puntos ni espacios">
+							<input id="dni-input" type="number" placeholder="DNI, sin puntos ni espacios">
 							<i class="icon-material-outline-credit-card"></i>
 						</div>
 					</div>
@@ -100,7 +100,7 @@
 					<div class="intro-search-field">
                         <label for ="socio-input" class="field-title ripple-effect">Buscar por Número de socio ?</label>
                         <div class="input-with-icon">
-                            <input id="socio-input" type="text" placeholder="N. de socio, solo hasta el guión">
+                            <input id="socio-input" type="number" placeholder="N. de socio, solo hasta el guión">
                             <i class="icon-material-outline-credit-card"></i>
                         </div>
 					</div>
@@ -130,6 +130,7 @@
 						<strong class="counter">27.854</strong>
 						<span>Hombres</span>
 					</li>
+				
 				</ul>
 			</div>
 		</div>
@@ -141,18 +142,28 @@
 <!-- Content
 ================================================== -->
 
-<div class="riesgo">
-	<i class="icon-line-awesome-warning"></i>
-	<p>Detectamos por tu edad que sos persona de riesgo, por favor cumplí con los cuidados correspondientes.</p>
+<div class="mensaje" id="mensajeError">
+	<p class="usuario-deshabilitado" id="error">No está habilitado para votar, verifique los datos ingresados.</p>
 </div>
-<div class="mensaje">
-	<p class="usuario-habilitado usuario-deshabilitado" id="usuario">Andrea Marin estas habilitada para votar</p>
-	<div class="datos">
-		<div class="datos-txt"><p>Mesa</p><p id="mesa">4342</p></div>
-		<div  class="datos-txt"><p>Orden</p><p id="orden">23432423</p></div>
+<div class="mensaje" id="mensaje">
+	<br>
+	<div class="riesgo" id="riesgo">
+		<i class="icon-line-awesome-warning"></i>
+		<p>Detectamos por tu edad que sos persona de riesgo, por favor cumplí con los cuidados correspondientes.</p>
 	</div>
-	<p class="socio">Gracias por ser socio durante estos <span id="años">30</span> años</p>
+	<br>
+	<p class="usuario-habilitado" id="usuario"></p>
+	<div class="datos">
+		<div class="datos-txt"><p>Mesa</p><p id="mesa"></p></div>
+		<div  class="datos-txt"><p>Orden</p><p id="orden"></p></div>
+	</div>
+	<br>
+	<p class="socio">Gracias por ser socio durante estos <span id="anios"></span> años</p>
+	<br>
 </div>
+
+
+
 <!-- Testimonials -->
 <div class="section gray padding-top-65 padding-bottom-55">
 	
@@ -426,7 +437,7 @@
 
 				<!-- Newsletter -->
 				<div class="col-xl-4 col-lg-4 col-md-12">
-					<h3><i class="icon-feather-mail"></i>Registrate para suscribirte!</h3>
+					<h3><i class="icon-feather-mail"></i>Recibí nuestra información!</h3>
 					<p></p>
 					<form action="#" method="get" class="newsletter">
 						<input type="text" name="fname" placeholder="Ingrese su correo electrónico">

@@ -364,7 +364,7 @@ img { max-width: 100%; }
 ------------------------------------- */
 #logo { 
 	display: inline-block;
-	border-right: 1px solid #e0e0e0;
+	/*border-right: 1px solid #e0e0e0;*/
 	height: 100%;
 	vertical-align: top;
 	padding-right: 35px;
@@ -377,16 +377,17 @@ img { max-width: 100%; }
 	top: 50%;
 	position: relative;
 	transform: translate3d(0,-50%,0);
+	margin-top: 20px;
 }
 
 #header {
 	position: relative;
 	z-index: 999;
 	padding: 0;
-	box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12);
+	/*box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12);*/
 	font-size: 16px;
 	height: 82px;
-	background-color: #fff;
+	/*background-color: #fff;*/
 }
 
 #header .container,
@@ -1442,7 +1443,7 @@ body #navigation ul ul ul { margin-top: 0; }
 .transparent-header #header {
 	background-color: transparent;
 	box-shadow: none;
-	border-bottom: 1px solid rgba(255,255,255,0.2);
+	/*border-bottom: 1px solid rgba(255,255,255,0.2);*/
 }
 
 .transparent-header #header .right-side { background-color: transparent; }
